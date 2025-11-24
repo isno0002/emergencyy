@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/burger.css" />
+    <link rel="stylesheet" href="css/cards.css" />
+    <link rel="stylesheet" href="css/forms.css" />
+    <link rel="icon" type="image/png" href="img/fav.png" />
+    <title>Emergency Site</title>
+  </head>
+  <body id="register">
+    <header>
+      <nav>
+        <div id="logotype-wrapper" class="logo">
+          <a href="index.html"> LOGO-TYPE </a>
+        </div>
+        <ul class="menu">
+          <li><a class="menuItem" href="instruction.html">Nærkontakt </a></li>
+          <li><a class="menuItem" href="register.html">Indberet</a></li>
+        </ul>
+        <button class="burger">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <h1>INDBERET</h1>
+
+      <section id="form-section">
+        <article id="form-info">
+          <h2>Er dit kæledyr blevet materialist?</h2>
+          <p>
+            Udfyld formularen og find ud af, om dit kæledyr viser tegn på
+            materialistisk adfærd. Det er sjovt, satirisk og måske lidt for
+            ærligt.
+          </p>
+        </article>
+
+        <form>
+          <section id="form-section-1">
+            <div class="form-group">
+              <label for="pet-name">Kæledyrets navn</label>
+              <input required type="text" id="pet-name" name="pet-name" />
+            </div>
+
+            <div class="form-group">
+              <label for="pet-type">Hvilket dyr er det?</label>
+              <select required id="pet-type" name="pet-type">
+                <option value="">-- Vælg dyretype --</option>
+                <option value="hund">Hund</option>
+                <option value="kat">Kat</option>
+                <option value="hest">Hest</option>
+                <option value="kanin">Kanin</option>
+                <option value="fisk">Fisk</option>
+                <option value="andet">Andet</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="alder">Alder</label>
+              <input required type="number" id="alder" name="alder" min="0" />
+            </div>
+          </section>
+
+          <section id="form-section-2">
+            <div class="form-group">
+              <label
+                >1. Hvordan reagerer dit kæledyr, når du kommer hjem med en
+                shoppingpose?</label
+              ><br />
+              <label
+                ><input type="radio" name="q1" value="a" /> Ignorerer posen –
+                kun mad tæller.</label
+              ><br />
+              <label
+                ><input type="radio" name="q1" value="b" /> Snuser nysgerrigt og
+                venter på at se indholdet.</label
+              ><br />
+              <label
+                ><input type="radio" name="q1" value="c" /> Hopper direkte ned i
+                posen og kræver at eje alt i den.</label
+              >
+            </div>
+
+            <div class="form-group">
+              <label>2. Hvad er dit kæledyrs yndlingssted?</label><br />
+              <label
+                ><input type="radio" name="q2" value="a" /> Haven eller marken –
+                naturen kalder.</label
+              ><br />
+              <label
+                ><input type="radio" name="q2" value="b" /> Sofaen – men kun
+                hvis tæppet matcher pelsen.</label
+              ><br />
+              <label
+                ><input type="radio" name="q2" value="c" /> Butiksvinduet – især
+                hvis der er noget med guld og glitter.</label
+              >
+            </div>
+
+            <div class="form-group">
+              <label
+                >3. Hvordan reagerer det, når du tager et billede af det?</label
+              ><br />
+              <label
+                ><input type="radio" name="q3" value="a" /> Kigger væk – det er
+                ikke en influencer.</label
+              ><br />
+              <label
+                ><input type="radio" name="q3" value="b" /> Poserer lidt, men
+                mister hurtigt interessen.</label
+              ><br />
+              <label
+                ><input type="radio" name="q3" value="c" /> Vælger selv vinkel
+                og filter.</label
+              >
+            </div>
+
+            <div class="form-group">
+              <label>4. Hvad er dit kæledyrs yndlingslegetøj?</label><br />
+              <label
+                ><input type="radio" name="q4" value="a" /> En pind eller bold –
+                klassikerne.</label
+              ><br />
+              <label
+                ><input type="radio" name="q4" value="b" /> Noget med mærke –
+                helst limited edition.</label
+              ><br />
+              <label
+                ><input type="radio" name="q4" value="c" /> Det seneste
+                smart-legetøj med lys og app.</label
+              >
+            </div>
+
+            <div class="form-group">
+              <label>5. Hvordan spiser det?</label><br />
+              <label
+                ><input type="radio" name="q5" value="a" /> Hurtigt og uden
+                brok.</label
+              ><br />
+              <label
+                ><input type="radio" name="q5" value="b" /> Kræver lidt pynt på
+                skålen.</label
+              ><br />
+              <label
+                ><input type="radio" name="q5" value="c" /> Nægter at spise,
+                medmindre der serveres på porcelæn.</label
+              >
+            </div>
+          </section>
+
+          <div class="form-group">
+            <label for="terms">
+              <input
+                required
+                type="checkbox"
+                id="terms"
+                name="accept_terms"
+                value="yes"
+              />
+              Jeg accepterer
+            </label>
+          </div>
+
+          <button type="submit">Indsend</button>
+        </form>
+      </section>
+
+      <section id="form-summary">
+        <h2>Resultat</h2>
+        <article>
+          <p class="placeholder">
+            Din opsummering vises her efter indsendelse.
+          </p>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="register.html">Register</a>
+          <a href="instruction.html">Instruction</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+        </div>
+
+        <div class="footer-newsletter">
+          <p>Subscribe to our newsletter</p>
+          <form>
+            <input type="email" placeholder="Your e-mail" required />
+            <button type="submit">Send</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025 Isa Cornelia Cecilia homesite.</p>
+      </div>
+    </footer>
+    <script src="js/burger.js"></script>
+    <!-- <script src="js/main.js"></script> -->
+  </body>
+</html>

@@ -1,0 +1,83 @@
+/* POPPOVER NYHETSARTIKLAR */
+
+[popover] {
+  max-height: 90vh;
+  max-width: 50ch;
+  width: 90vw;
+}
+
+[popover] {
+  padding: 1rem;
+
+  button {
+    position: sticky;
+    top: 0;
+    justify-self: end;
+  }
+
+  &:popover-open {
+    display: grid;
+    place-items: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &::backdrop {
+    background: #0008;
+  }
+}
+
+details.read_more {
+  cursor: pointer;
+  border: none;
+}
+
+details.read_more summary {
+  list-style: none;
+  display: inline;
+}
+
+details.read_more summary::-webkit-details-marker {
+  display: none;
+}
+
+/* Gör så att trepunkterna känns som fortsättning */
+details.read_more summary::after {
+  content: "";
+}
+
+details.read_more p {
+  margin-top: 1rem;
+}
+
+details.read_more summary:hover {
+  text-decoration: underline;
+  text-decoration-style: line;
+  text-decoration-thickness: 1px;
+}
+/* Light theme (default) */
+:root {
+  --bg: #ffffff;
+  --text: #111111;
+  --card-bg: #f3f3f3;
+}
+
+/* Apply variables */
+body {
+  background: var(--bg);
+  color: var(--text);
+}
+
+.daily_card,
+.news_card {
+  background: var(--card-bg);
+}
+
+/* DARK MODE */
+html.dark {
+  --bg: #111111;
+  --text: #ffffff;
+  --card-bg: #1d1d1d;
+}
